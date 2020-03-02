@@ -1,0 +1,37 @@
+body{
+    font-family: 'Vollkorn SC', cursive;
+    background: url("https://images.unsplash.com/photo-1570482960841-8b75c1a9f410?ixlib=rb-1.2.1&auto=format&fit=crop&w=2597&q=80")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+}
+
+#container{
+    width:37vw;    
+    border: 5px solid brown;
+    border-radius: 20px;
+    align-items: center;
+    padding:50px 50px 50px 50px;
+    position: relative;
+    margin-left:5vw;
+    margin-top:5vw;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+#versatileForm{
+    position:relative;
+    line-height:3em;
+}
+
