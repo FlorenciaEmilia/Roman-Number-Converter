@@ -110,3 +110,13 @@ input {
 .passed {
 	color: black;
 }
+
+@media (max-width: 850px) {
+	#container {
+		width: 100vw;
+		padding: 4em;
+	}
+	input {
+		font-size: 13px;
+	}
+}
