@@ -1,27 +1,81 @@
 body {
 	font-family: 'Vollkorn SC', cursive;
-	background: url("https://images.unsplash.com/photo-1570482960841-8b75c1a9f410?ixlib=rb-1.2.1&auto=format&fit=crop&w=2597&q=80")no-repeat center center fixed;
+	background-color: #001a4d;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	color: white;
+	color: #283a5c;
 	box-sizing: border-box;
 	padding: 0;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
-
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#super-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
 #container {
 	width: 30vw;
-	border: 20px dotted white;
-	background-color: gray;
-	border-radius: 20px;
+	background-color: white;
+	border-radius: 10% 70% 90% 30% / 11% 41% 59% 89%;
 	align-items: center;
-	padding: 2em;
+	padding: 8em;
 	position: relative;
-	margin-left: 15vw;
-	margin-top: 15vw;
-	font-size: 4em;
+	margin: auto;
 	box-sizing: content-box;
+	animation: wobble 25s ease-in-out alternate infinite;
+	animation-duration: 4s;
+}
+
+#container:hover {
+	animation-play-state: paused;
+}
+
+/* @keyframes morphing {
+	0% {
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+		box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+	}
+	25% {
+		border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+	}
+	50% {
+		border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+		box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
+	}
+	75% {
+		border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+	}
+} */
+
+@keyframes wobble {
+	0% {
+		border-radius: 30% 70% 70% 30% / 53% 41% 59% 47%;
+	}
+	25% {
+		border-radius: 30% 70% 70% 30% / 53% 63% 37% 47%;
+	}
+	50% {
+		border-radius: 30% 40% 70% 30% / 29% 79% 21% 71%;
+	}
+
+	75% {
+		border-radius: 60% 40% 70% 30% / 43% 79% 21% 57%;
+	}
+	100% {
+		border-radius: 60% 40% 87% 13% / 31% 80% 20% 69%;
+	}
 }
 
 /* h1 {
@@ -29,11 +83,15 @@ body {
 } */
 
 input {
+	font-family: 'Vollkorn SC', cursive;
 	width: 100%;
-	padding: 2em;
+	padding: 1em;
 	display: inline-block;
-	font-size: 30px;
+	font-size: 1em;
 	box-sizing: border-box;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #9674cc;
 }
 
 #versatileForm {
@@ -46,7 +104,7 @@ input {
 }
 
 .failed {
-	color: red;
+	color: #e33645;
 }
 
 .passed {
