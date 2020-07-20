@@ -6,34 +6,39 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	color: white;
+	box-sizing: border-box;
+	padding: 0;
 }
 
 #container {
 	width: 30vw;
-	border: 5px solid brown;
+	border: 20px dotted white;
 	background-color: gray;
 	border-radius: 20px;
 	align-items: center;
-	padding: 50px 50px 50px 50px;
+	padding: 2em;
 	position: relative;
 	margin-left: 15vw;
 	margin-top: 15vw;
+	font-size: 4em;
+	box-sizing: content-box;
 }
 
-h1 {
+/* h1 {
 	text-align: center;
-}
+} */
 
 input {
 	width: 100%;
-	padding: 12px 20px;
+	padding: 2em;
 	display: inline-block;
+	font-size: 30px;
 	box-sizing: border-box;
 }
 
 #versatileForm {
 	position: relative;
-	line-height: 3em;
+	line-height: 2em;
 }
 
 #romanNumber {
